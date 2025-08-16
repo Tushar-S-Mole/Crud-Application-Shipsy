@@ -1,7 +1,7 @@
 import mongoose from "mongoose"
 
 const MONGODB_URI = "mongodb+srv://tushar:tushar123@blackcoffer-cluster.ezl5d3b.mongodb.net/?retryWrites=true&w=majority&appName=blackcoffer-cluster"
-
+// console.log("MONGODB_URI", MONGODB_URI)
 if (!MONGODB_URI) {
   throw new Error("Please define the MONGODB_URI environment variable inside .env.local")
 }
