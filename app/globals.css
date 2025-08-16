@@ -1,0 +1,128 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated color tokens to match professional logistics dashboard design */
+  --background: oklch(0.97 0.005 240); /* #f1f5f9 - Light gray background */
+  --foreground: oklch(0.25 0.015 240); /* #1f2937 - Dark gray text */
+  --card: oklch(1 0 0); /* #ffffff - White cards */
+  --card-foreground: oklch(0.35 0.01 240); /* #374151 - Card text */
+  --popover: oklch(1 0 0); /* #ffffff - White popovers */
+  --popover-foreground: oklch(0.25 0.015 240); /* #1f2937 - Popover text */
+  --primary: oklch(0.25 0.015 240); /* #1f2937 - Primary actions */
+  --primary-foreground: oklch(1 0 0); /* #ffffff - White text on primary */
+  --secondary: oklch(0.55 0.01 240); /* #6b7280 - Secondary actions */
+  --secondary-foreground: oklch(1 0 0); /* #ffffff - White text on secondary */
+  --muted: oklch(0.97 0.005 240); /* #f1f5f9 - Muted backgrounds */
+  --muted-foreground: oklch(0.55 0.01 240); /* #6b7280 - Muted text */
+  --accent: oklch(0.65 0.15 280); /* #8b5cf6 - Purple accent */
+  --accent-foreground: oklch(1 0 0); /* #ffffff - White text on accent */
+  --destructive: oklch(0.55 0.22 25); /* #dc2626 - Red for errors */
+  --destructive-foreground: oklch(1 0 0); /* #ffffff - White text on destructive */
+  --border: oklch(0.92 0.005 240); /* #e5e7eb - Light gray borders */
+  --input: oklch(1 0 0); /* #ffffff - White input fields */
+  --ring: oklch(0.55 0.15 260); /* #6366f1 - Blue focus rings */
+  --chart-1: oklch(0.55 0.15 260); /* #4f46e5 - Blue charts */
+  --chart-2: oklch(0.6 0.2 290); /* #9333ea - Purple charts */
+  --chart-3: oklch(0.65 0.25 330); /* #ec4899 - Pink charts */
+  --chart-4: oklch(0.7 0.15 70); /* #f59e0b - Yellow charts */
+  --chart-5: oklch(0.65 0.15 140); /* #22c55e - Green charts */
+  --radius: 0.5rem;
+  --sidebar: oklch(1 0 0); /* #ffffff - White sidebar */
+  --sidebar-foreground: oklch(0.25 0.015 240); /* #1f2937 - Sidebar text */
+  --sidebar-primary: oklch(0.97 0.005 240); /* #f1f5f9 - Sidebar sections */
+  --sidebar-primary-foreground: oklch(0.25 0.015 240); /* #1f2937 - Sidebar section text */
+  --sidebar-accent: oklch(0.65 0.15 280); /* #8b5cf6 - Sidebar highlights */
+  --sidebar-accent-foreground: oklch(1 0 0); /* #ffffff - Sidebar accent text */
+  --sidebar-border: oklch(0.92 0.005 240); /* #e5e7eb - Sidebar borders */
+  --sidebar-ring: oklch(0.55 0.15 260); /* #6366f1 - Sidebar focus rings */
+}
+
+.dark {
+  --background: oklch(0.15 0.01 240); /* Dark background */
+  --foreground: oklch(0.95 0.005 240); /* Light text */
+  --card: oklch(0.18 0.01 240); /* Dark cards */
+  --card-foreground: oklch(0.95 0.005 240); /* Light card text */
+  --popover: oklch(0.18 0.01 240); /* Dark popovers */
+  --popover-foreground: oklch(0.95 0.005 240); /* Light popover text */
+  --primary: oklch(0.95 0.005 240); /* Light primary in dark mode */
+  --primary-foreground: oklch(0.15 0.01 240); /* Dark text on primary */
+  --secondary: oklch(0.3 0.01 240); /* Dark secondary */
+  --secondary-foreground: oklch(0.95 0.005 240); /* Light text on secondary */
+  --muted: oklch(0.25 0.01 240); /* Dark muted */
+  --muted-foreground: oklch(0.7 0.005 240); /* Muted text */
+  --accent: oklch(0.7 0.15 280); /* Brighter purple in dark mode */
+  --accent-foreground: oklch(0.95 0.005 240); /* Light text on accent */
+  --destructive: oklch(0.6 0.22 25); /* Brighter red in dark mode */
+  --destructive-foreground: oklch(0.95 0.005 240); /* Light text on destructive */
+  --border: oklch(0.25 0.01 240); /* Dark borders */
+  --input: oklch(0.25 0.01 240); /* Dark inputs */
+  --ring: oklch(0.6 0.15 260); /* Brighter focus rings */
+  --chart-1: oklch(0.6 0.15 260);
+  --chart-2: oklch(0.65 0.2 290);
+  --chart-3: oklch(0.7 0.25 330);
+  --chart-4: oklch(0.75 0.15 70);
+  --chart-5: oklch(0.7 0.15 140);
+  --sidebar: oklch(0.18 0.01 240); /* Dark sidebar */
+  --sidebar-foreground: oklch(0.95 0.005 240); /* Light sidebar text */
+  --sidebar-primary: oklch(0.25 0.01 240); /* Dark sidebar sections */
+  --sidebar-primary-foreground: oklch(0.95 0.005 240); /* Light sidebar section text */
+  --sidebar-accent: oklch(0.7 0.15 280); /* Bright sidebar accent */
+  --sidebar-accent-foreground: oklch(0.95 0.005 240); /* Light sidebar accent text */
+  --sidebar-border: oklch(0.25 0.01 240); /* Dark sidebar borders */
+  --sidebar-ring: oklch(0.6 0.15 260); /* Bright sidebar focus rings */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  /* Added custom font variables for Geist Sans and Manrope */
+  --font-sans: "Geist Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Manrope", ui-serif, Georgia, serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
