@@ -1,6 +1,1 @@
-{
-  "/api/vehicles/stats/route": "app/api/vehicles/stats/route.js",
-  "/api/vehicles/route": "app/api/vehicles/route.js",
-  "/page": "app/page.js",
-  "/dashboard/page": "app/dashboard/page.js"
-}
+{}
