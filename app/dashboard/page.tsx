@@ -111,7 +111,7 @@ export default function DashboardPage() {
               }`}
             >
               <BarChart3 className="h-4 w-4 inline mr-2" />
-              Overview
+               Overview
             </button>
             <button
               onClick={() => setActiveTab("register")}
@@ -152,7 +152,7 @@ export default function DashboardPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-              <Card>
+              {/* <Card>
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                   <CardTitle className="text-sm font-medium font-serif">Total Vehicles</CardTitle>
                   <Truck className="h-4 w-4 text-muted-foreground" />
@@ -163,9 +163,9 @@ export default function DashboardPage() {
                   </div>
                   <p className="text-xs text-muted-foreground font-serif">Registered in system</p>
                 </CardContent>
-              </Card>
+              </Card> */}
 
-              <Card>
+              {/* <Card>
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                   <CardTitle className="text-sm font-medium font-serif">Active Vehicles</CardTitle>
                   <BarChart3 className="h-4 w-4 text-muted-foreground" />
@@ -176,9 +176,9 @@ export default function DashboardPage() {
                   </div>
                   <p className="text-xs text-muted-foreground font-serif">Currently operational</p>
                 </CardContent>
-              </Card>
+              </Card> */}
 
-              <Card>
+              {/* <Card>
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                   <CardTitle className="text-sm font-medium font-serif">In Transit</CardTitle>
                   <Truck className="h-4 w-4 text-muted-foreground" />
@@ -189,9 +189,9 @@ export default function DashboardPage() {
                   </div>
                   <p className="text-xs text-muted-foreground font-serif">On active routes</p>
                 </CardContent>
-              </Card>
+              </Card> */}
 
-              <Card>
+              {/* <Card>
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                   <CardTitle className="text-sm font-medium font-serif">Today's Registrations</CardTitle>
                   <Plus className="h-4 w-4 text-muted-foreground" />
@@ -202,7 +202,7 @@ export default function DashboardPage() {
                   </div>
                   <p className="text-xs text-muted-foreground font-serif">Registered today</p>
                 </CardContent>
-              </Card>
+              </Card> */}
             </div>
 
             {/* Quick Actions */}
