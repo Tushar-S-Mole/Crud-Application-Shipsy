@@ -6,7 +6,7 @@ A comprehensive web application for managing vehicles at logistics companies.
 | <img width="1919" height="911" alt="image" src="https://github.com/user-attachments/assets/25167572-d1ab-4bb0-a1eb-87eb6778064f" />| <img width="1918" height="915" alt="image" src="https://github.com/user-attachments/assets/22a4d5ce-8dbc-4cb0-b006-2d22fd25b855" />|
 |-------------------------|-------------------------|
 | <img width="1890" height="761" alt="image" src="https://github.com/user-attachments/assets/9ea933af-e0ef-42d4-8f72-c4fbb531e53c" />| <img width="1910" height="900" alt="image" src="https://github.com/user-attachments/assets/99dc145e-5d84-4f81-8ac3-9ffde803749e" />
-|
+
 
 
 ## Login Password
