@@ -224,7 +224,7 @@ export default function DashboardPage() {
                 </CardContent>
               </Card>
 
-              <Card>
+              {/* <Card>
                 <CardHeader>
                   <CardTitle className="font-sans">Status Breakdown</CardTitle>
                   <CardDescription className="font-serif">Vehicle distribution by status</CardDescription>
@@ -244,7 +244,7 @@ export default function DashboardPage() {
                     </div>
                   )}
                 </CardContent>
-              </Card>
+              </Card> */}
             </div>
           </div>
         )}
