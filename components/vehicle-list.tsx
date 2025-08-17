@@ -156,7 +156,7 @@ export function VehicleList() {
             <SelectItem value="active">Active</SelectItem>
             <SelectItem value="in-transit">In Transit</SelectItem>
             <SelectItem value="maintenance">Maintenance</SelectItem>
-            <SelectItem value="inactive">Inactive</SelectItem>
+           
           </SelectContent>
         </Select>
       </div>
